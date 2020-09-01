@@ -99,91 +99,6 @@ header .lnb li a:hover span:after {
   padding: 0 50px;
 }
 
-.visual .prev,
-.visual .next {
-  display: block;
-  position: absolute;
-  top: 50%;
-  width: 25px;
-  height: 47px;
-  transform: translateY(-50%);
-  background: url(../images/sp_com.png) no-repeat;
-  color: transparent;
-}
-
-.visual .prev {
-  left: 82px;
-  background-position: -128px -60px;
-}
-.visual .next {
-  right: 82px;
-  background-position: -158px -60px;
-}
-
-.visual .control {
-  position: absolute;
-  left: 0;
-  bottom: 55px;
-  width: 100%;
-  text-align: center;
-}
-
-.visual .control > div {
-  display: inline-block;
-  position: relative;
-  padding: 0 45px 0 0;
-}
-.visual .control > div > div {
-  position: absolute;
-  right: 0;
-}
-
-.visual .control > div > div a {
-  overflow: hidden;
-  display: inline-block;
-  width: 8px;
-  height: 9px;
-  margin: 0 0 0 7px;
-  background: url(../images/sp_com.png) no-repeat center;
-  opacity: 0.5;
-}
-
-.visual .control > div > div > a.on {
-  opacity: 1;
-}
-
-.visual .control > div > div a.play {
-  background-position: -108px -72px;
-}
-.visual .control > div > div a.pause {
-  background-position: -108px -60px;
-}
-
-.visual .control ul {
-  display: inline-block;
-  font-size: 0;
-  position: relative;
-  top: -7px;
-}
-.visual .control li {
-  display: inline-block;
-  padding: 0 3px;
-}
-.visual .control .on a {
-  background-color: #fff;
-}
-
-.visual .control li a {
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: rgba(255, 255, 255, 0.5);
-  border: none;
-}
-.visual .control a {
-  color: transparent;
-}
-
 .visual .con > div {
   height: 640px;
 }
@@ -206,4 +121,159 @@ header .lnb li a:hover span:after {
   top: 175px;
   position: absolute;
 }
-/* --------product-------- */
+
+.product a {
+  color: #001829;
+  font-size: 15px;
+}
+
+.product a:hover {
+  color: #2d5b79;
+  font-weight: bold;
+}
+
+.product a:before {
+  margin: 0 0 26px;
+  content: "";
+  display: block;
+  width: 64px;
+  height: 52px;
+  background: url(../images/sp_com.png) no-repeat;
+}
+
+.product ul {
+  padding: 46px 0 41px;
+  text-align: center;
+  font-size: 0px;
+}
+
+.product li {
+  display: inline-block;
+  text-align: center;
+  padding: 0 55px;
+}
+
+.product li:nth-child(1) a:before {
+  background-position: -3px -118px;
+}
+.product li:nth-child(2) a:before {
+  background-position: -75px -118px;
+}
+.product li:nth-child(3) a:before {
+  background-position: -148px -118px;
+}
+.product li:nth-child(4) a:before {
+  background-position: -219px -118px;
+}
+.product li:nth-child(5) a:before {
+  background-position: -292px -118px;
+}
+.product li:nth-child(6) a:before {
+  background-position: -364px -118px;
+}
+/* hover */
+
+.product li:nth-child(1) a:hover:before {
+  background-position: -3px -184px;
+}
+.product li:nth-child(2) :hover:before {
+  background-position: -75px -184px;
+}
+.product li:nth-child(3) a:hover:before {
+  background-position: -148px -184px;
+}
+.product li:nth-child(4) a:hover:before {
+  background-position: -219px -184px;
+}
+.product li:nth-child(5) a:hover:before {
+  background-position: -292px -184px;
+}
+.product li:nth-child(6) a:hover:before {
+  background-position: -364px -184px;
+}
+
+/*  slide  공통 */
+.slide .prev,
+.slide .next {
+  display: block;
+  position: absolute;
+  top: 50%;
+  width: 25px;
+  height: 47px;
+  transform: translateY(-50%);
+  background: url(../images/sp_com.png) no-repeat;
+  color: transparent;
+}
+
+.slide .prev {
+  left: 82px;
+  background-position: -128px -60px;
+}
+.slide .next {
+  right: 82px;
+  background-position: -158px -60px;
+}
+
+.slide .control {
+  position: absolute;
+  left: 0;
+  bottom: 55px;
+  width: 100%;
+  text-align: center;
+}
+
+.slide .control > div {
+  display: inline-block;
+  position: relative;
+  padding: 0 45px 0 0;
+}
+.slide .control > div > div {
+  position: absolute;
+  right: 0;
+}
+
+.slide .control > div > div a {
+  overflow: hidden;
+  display: inline-block;
+  width: 8px;
+  height: 9px;
+  margin: 0 0 0 7px;
+  background: url(../images/sp_com.png) no-repeat center;
+  opacity: 0.5;
+}
+
+.slide .control > div > div > a.on {
+  opacity: 1;
+}
+
+.slide .control > div > div a.play {
+  background-position: -108px -72px;
+}
+.slide .control > div > div a.pause {
+  background-position: -108px -60px;
+}
+
+.slide .control ul {
+  display: inline-block;
+  font-size: 0;
+  position: relative;
+  top: -7px;
+}
+.slide .control li {
+  display: inline-block;
+  padding: 0 3px;
+}
+.slide .control .on a {
+  background-color: #fff;
+}
+
+.slide .control li a {
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+.slide .control a {
+  color: transparent;
+}
