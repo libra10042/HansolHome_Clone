@@ -191,10 +191,158 @@ header .lnb li a:hover span:after {
 .product li:nth-child(6) a:hover:before {
   background-position: -364px -184px;
 }
+/* magazine */
+.magazine {
+  height: 670px;
+  background: #dfd9d1;
+  position: relative;
+  overflow: hidden;
+}
+.magazine h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #000;
+  padding: 50px 0 16px;
+  line-height: 100%;
+}
 
-/*  slide  공통 */
+.magazine p {
+  font-size: 14px;
+  text-align: center;
+  color: #3a3b36;
+  line-height: 100%;
+}
+
+.magazine .slide_box > div {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 1180px;
+  height: 480px;
+}
+
+.magazine .slide_box > div:nth-child(1) {
+  margin-left: -1380px;
+}
+.magazine .slide_box > div:nth-child(3) {
+  margin-left: 1380px;
+}
+
+.magazine .slide_box .left {
+  position: relative;
+  overflow: hidden;
+  float: left;
+  width: 800px;
+  height: 430px;
+}
+.magazine .slide_box .left img {
+  width: 100%;
+}
+
+.magazine .slide_box .left div {
+  padding: 47px 20px 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 200px;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.magazine .slide_box .left div h3 {
+  color: #fff;
+  font-size: 20px;
+  line-height: 32px;
+}
+.magazine .slide_box .left div h3 span {
+  font-weight: normal;
+  display: block;
+}
+
+.magazine .slide_box .left div p {
+  padding: 9px 0 0;
+  font-size: 16px;
+  color: #fff;
+  text-align: left;
+  line-height: 24px;
+}
+
+.magazine .slide_box .left div a {
+  position: absolute;
+  right: 20px;
+  bottom: 40px;
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  border: 1px solid #fff;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 45px;
+}
+
+.magazine .slide_box .right {
+  padding: 20px 20px 0;
+  float: right;
+  width: 380px;
+  height: 430px;
+  box-sizing: border-box;
+  background: #fff;
+}
+.magazine .slide_box .right li {
+  padding: 0 0 20px;
+}
+.magazine .slide_box .right li a {
+  position: relative;
+  right: 70px;
+  display: table;
+  padding: 0 0 0 100px;
+  font-size: 16px;
+  color: #333;
+}
+
+.magazine .slide_box .right li a div {
+  display: table-cell;
+  height: 82px;
+  position: relative;
+  display: table;
+  padding: 0 0 0 100px;
+  font-size: 16px;
+  color: #333;
+  vertical-align: middle;
+}
+
+.magazine .slide_box .right li a img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.magazine .slide_box .right li a strong {
+  display: block;
+  color: #000;
+  font-size: 13px;
+}
+
+.magazine .slide .control {
+  bottom: 48px;
+}
+.magazine .slide .prev {
+  left: 50%;
+  margin: 26px 0 0 -640px;
+}
+.magazine .slide .next {
+  right: 50%;
+  margin: 26px -640px 0 0;
+}
+
+/* ---------------------------- slide  공통 ---------------------------*/
 .slide .prev,
 .slide .next {
+  z-index: 10;
   display: block;
   position: absolute;
   top: 50%;
