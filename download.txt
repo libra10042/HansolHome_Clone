@@ -15,3 +15,8 @@ https://blog.naver.com/rebehayan/221351418973
 
 > image size 를 줄일 때는 overflow hide 처리를 해준다.
 > image 크기를 줄 때는 width 나  height 둘 중 하나만  100% 처리해 준다. ( 이미지 손상이 없도록 함이 목적)
+
+
+> notice
+- bix-sizing 속성
+ : context-box -> 기본값으로 너비, 높이는 content 영역만을 의미함. (border, padding, margin 제외.)
