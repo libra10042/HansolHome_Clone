@@ -20,3 +20,38 @@ https://blog.naver.com/rebehayan/221351418973
 > notice
 - bix-sizing 속성
  : context-box -> 기본값으로 너비, 높이는 content 영역만을 의미함. (border, padding, margin 제외.)
+
+
+> hover
+: 마우스를 올렸을 때 어떻게 동작하는지 보여준다. (hover안에는 디자인 요소가 있으면 안된다.)
+ ( 마우스 올리기 전단계에 디자인을 넣어야 한다.)
+ 
+.notice > div > .top > ul a span {
+  display: block;
+  font-weight: normal;
+  padding: 20px 0 0;
+  position: relative;
+  top: 10px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.notice div > .top > ul a:hover span {
+  top: 0;
+  opacity: 1;
+}
+
+
+---> opacity 0   ->   opacity 1
+
+
+
+
+
+
+> color : transparent;
+: 글자를 투명하게 한다. 
+
+
+
+> flex : n/1로 화면을 나눌 때 사용한다.
